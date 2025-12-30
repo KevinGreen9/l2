@@ -368,3 +368,59 @@ input {
     width: 650px;
     height: 743px;
 }
+.end{
+    display: flex;
+    flex-direction: column;
+}
+.updates{
+    border-radius: 32px;
+    width: 1300px;
+    height: 387px;
+    background: #000;
+display: flex;
+    flex-direction: row ;
+    gap: 76px;
+   align-items: center;
+    margin: 100px 0;
+
+}
+.left{
+    max-width: 642px;
+    padding-left: 60px;
+}
+.sub{
+    font-size: 72px;
+    line-height: 1.1;
+}
+.right{
+    padding: 60px 60px 75px 0;
+
+}
+
+.action{
+    display: flex;
+    flex-direction: column;
+}
+
+#name, #mail {
+    border: 1px solid #191919;
+    border-radius: 6px;
+    width: 522px;
+    height: 82px;
+    background: #191919;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 20px;
+}
+.ssb{
+    width: 87px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 15px;
+
+    /* line-height: 29px; */
+    line-height: 1.92;
+    color: rgba(255, 255, 255, 0.7);
+}
