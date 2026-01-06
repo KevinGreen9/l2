@@ -368,7 +368,7 @@ input {
     width: 650px;
     height: 743px;
 }
-.end{
+.subscription{
     display: flex;
     flex-direction: column;
 }
@@ -414,13 +414,67 @@ display: flex;
     color: rgba(255, 255, 255, 0.7);
     padding-left: 20px;
 }
-.ssb{
+.small{
     width: 87px;
     height: 48px;
     font-weight: 700;
     font-size: 15px;
-
     /* line-height: 29px; */
     line-height: 1.92;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.reviews{
+    width: 1300px;
+    max-height: 701px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 100px 0;
+}
+.review{
+    border-radius: 32px;
+    width: 423px;
+    height: 321px;
+    background: #000;
+
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 54px 0  0 50px;
+}
+
+
+.comment{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #fff;
+    padding: 21px 0 19px 50px;
+}
+.name{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 50px;
+}
+.c1{
+    padding-right: 60px;
+}
+.c2{
+    padding-right: 85px;
+}
+.c3{
+    padding-right: 72px;
+}
+.c4{
+    /*min-height: 173px;*/
+    padding-right: 56px;
+    display: flex;
+    justify-content: flex-start;
 }
