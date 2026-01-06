@@ -134,10 +134,6 @@ input {
     appearance: none;
 }
 
-.image {
-
-}
-
 
 .continue {
     min-width: 1440px;
@@ -146,7 +142,7 @@ input {
 }
 
 .container {
-  display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -290,27 +286,6 @@ input {
 
 }
 
-/*.too-card-info {*/
-/*    width: 778px;*/
-/*    height: 432px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    margin-top: 7px;*/
-/*}*/
-
-/*.tips {*/
-/*    border-radius: 6px;*/
-/*    width: 136px;*/
-/*    height: 27px;*/
-/*    background: #191919;*/
-/*    font-weight: 400;*/
-/*    font-size: 17px;*/
-/*    line-height: 1.58824;*/
-/*    color: #fff;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*}*/
-
 .three-card {
     border-radius: 32px;
     width: 1300px;
@@ -322,19 +297,12 @@ input {
     padding: 40px;
 }
 
-/*.three-card-info {*/
-/*    width: 778px;*/
-/*    height: 432px;*/
-/*    margin-top: 7px;*/
-/*}*/
-
-
 .solo {
     font-size: 57px;
     line-height: 1.23509;
 }
 
-.three-main{
+.three-main {
     max-width: 1300px;
     height: 743px;
     display: flex;
@@ -342,62 +310,72 @@ input {
     gap: 60px;
     margin: 100px 0;
 }
-.host-info{
+
+.host-info {
     max-width: 590px;
     height: 448px;
     padding: 147px 0;
     display: flex;
     flex-direction: column;
 }
-.svg{
+
+.svg {
     /*transform: rotate(90deg);*/
-   /*padding-bottom: 20px;*/
+    /*padding-bottom: 20px;*/
 }
-.host{
+
+.host {
     font-size: 17px;
     line-height: 1.58824;
     width: fit-content;
 }
-.jacob{
+
+.jacob {
     font-size: 65px;
     line-height: 1.21846;
     padding-bottom: 28px;
 }
-.boss{
+
+.boss {
     border-radius: 12px;
     width: 650px;
     height: 743px;
 }
-.subscription{
+
+.subscription {
     display: flex;
     flex-direction: column;
 }
-.updates{
+
+.updates {
     border-radius: 32px;
     width: 1300px;
     height: 387px;
     background: #000;
-display: flex;
-    flex-direction: row ;
+    display: flex;
+    flex-direction: row;
     gap: 76px;
-   align-items: center;
+    align-items: center;
     margin: 100px 0;
 
 }
-.left{
+
+.left {
     max-width: 642px;
     padding-left: 60px;
 }
-.sub{
+
+.sub {
     font-size: 72px;
     line-height: 1.1;
 }
-.right{
+
+.right {
     padding: 60px 60px 75px 0;
 
 }
 
-.action{
+.action {
     display: flex;
     flex-direction: column;
 }
@@ -414,7 +392,8 @@ display: flex;
     color: rgba(255, 255, 255, 0.7);
     padding-left: 20px;
 }
-.small{
+
+.small {
     width: 87px;
     height: 48px;
     font-weight: 700;
@@ -424,7 +403,7 @@ display: flex;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.reviews{
+.reviews {
     width: 1300px;
     max-height: 701px;
     display: flex;
@@ -434,47 +413,94 @@ display: flex;
     gap: 16px;
     margin: 100px 0;
 }
-.review{
+
+.review {
     border-radius: 32px;
     width: 423px;
     height: 321px;
     background: #000;
 
 }
-.stars{
+
+.stars {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    padding: 54px 0  0 50px;
+    padding: 54px 0 0 50px;
 }
 
 
-.comment{
+.comment {
     font-weight: 400;
     font-size: 36px;
     line-height: 1.2;
     color: #fff;
     padding: 21px 0 19px 50px;
 }
-.name{
+
+.name {
     font-weight: 400;
     font-size: 24px;
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.7);
     padding-left: 50px;
 }
-.c1{
+
+.c1 {
     padding-right: 60px;
 }
-.c2{
+
+.c2 {
     padding-right: 85px;
 }
-.c3{
+
+.c3 {
     padding-right: 72px;
 }
-.c4{
+
+.c4 {
     /*min-height: 173px;*/
     padding-right: 56px;
     display: flex;
     justify-content: flex-start;
+}
+
+.footer{
+    min-width: 1440px;
+    height: 438px;
+    padding: 100px 70px 116px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0 auto;
+}
+.social{
+    width: 447px;
+    max-height: 222px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.messenger{
+    padding-top: 20px;
+}
+
+.bottom-menu{
+    width: 178px;
+    height: 222px;
+}
+
+.menu-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.licence{
+    width: 178px;
+    height: 222px;
+}
+.menu-licence{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
