@@ -20,23 +20,26 @@
         </a>
         <ul class="menu">
             <li class="menu-item">
-                <a href="" class="menu-link"> Home</a>
+                <a href="#home" class="menu-link"> Home</a>
             </li>
             <li class="menu-item">
-                <a href="" class="menu-link">Episodes</a>
+                <a href="#episodes" class="menu-link">Episodes</a>
             </li>
             <li class="menu-item">
-                <a href="" class="menu-link"> About</a>
+                <a href="#about" class="menu-link"> About</a>
             </li>
             <li class="menu-item">
-                <a href="" class="menu-link">Contact</a>
+                <a href="#contacts" class="menu-link">Contact</a>
             </li>
         </ul>
     </div>
 </header>
-<section class="main">
+<section id="home">
     <div class="main-wrapper">
-        <img class="main-img" src="./assets/IMAGE%20(3).png" alt="image">
+        <div class="main-img-wrap">
+            <img class="main-img" src="./assets/IMAGE%20(3).png" alt="image">
+        </div>
+
         <div class="main-info">
             <p class="text">Take your podcast to the
                 <span class="next">next</span>
@@ -47,23 +50,23 @@
                 <form>
                     <input type="radio" id="spotify" name="choice">
                     <label for="spotify" onclick="window.location.href='https://spotify.com'">
-                        <img src="./assets/Vector%20(1).png" alt="">
+                        <img class="img" src="./assets/Vector%20(1).png" alt="">
                     </label>
                     <input type="radio" id="pinterest" name="choice">
                     <label for="pinterest" onclick="window.location.href='https://pocketcasts.com'">
-                        <img src="./assets/Vector%20(2).png" alt="">
+                        <img class="img" src="./assets/Vector%20(2).png" alt="">
                     </label>
                     <input type="radio" id="weather" name="choice">
                     <label for="weather" onclick="window.location.href='https://www.cloudflare.com/ru-ru'">
-                        <img src="./assets/IMAGE.png" alt="">
+                        <img class="img" src="./assets/IMAGE.png" alt="">
                     </label>
                     <input type="radio" id="ios" name="choice">
                     <label for="ios" onclick="window.location.href='https://www.apple.com/apple-podcasts'">
-                        <img src="./assets/IMAGE%20(2).png" alt="">
+                        <img class="img" src="./assets/IMAGE%20(2).png" alt="">
                     </label>
                     <input type="radio" id="connect" name="choice">
                     <label for="connect" onclick="window.location.href='https://overcast.fm'">
-                        <img src="./assets/IMAGE%20(1).png" alt="">
+                        <img class="img" src="./assets/IMAGE%20(1).png" alt="">
                     </label>
                 </form>
             </div>
@@ -75,7 +78,7 @@
 
 </section>
 
-<section class="continue">
+<section id="episodes">
     <div class="container">
         <div class="one-main">
             <h1 class="heading">Latest episodes</h1>
@@ -126,12 +129,13 @@
 
     </div>
 </section>
-<section>
+<section id="about">
     <div class="container">
         <div class="three-main">
             <div class="host-info">
-                <a href="./assets/Frame.png" class="svg">
-                    <img src="./assets/Frame.png" alt="">
+                <a  class="arrow" href="#subscription" >
+                    <img class="fon" src="./assets/Fon.png" alt="">
+                    <img class="str" src="assets/str1.png" alt="">
                 </a>
                 <span class="episode host">Meet your host</span>
                 <h2 class="description jacob">Jacob Paulaner</h2>
@@ -147,7 +151,7 @@
     </div>
 </section>
 
-<section class="subscription">
+<section id="subscription">
 
     <div class="container">
         <div class="updates">
@@ -258,7 +262,7 @@
 
 </section>
 
-<footer>
+<footer id="contacts">
     <div class="container">
         <div class="footer">
             <div class="social">
@@ -274,16 +278,16 @@
             <div class="bottom-menu">
                 <ul class="menu-footer">
                     <li class="menu-item">
-                        <a href="" class="menu-link"> Home</a>
+                        <a href="#home" class="menu-link"> Home</a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">Episodes</a>
+                        <a href="#episodes" class="menu-link">Episodes</a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link"> About</a>
+                        <a href="#about" class="menu-link"> About</a>
                     </li>
                     <li class="menu-item">
-                        <a href="" class="menu-link">Contact</a>
+                        <a href="#contacts" class="menu-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -313,23 +317,23 @@
                 <form>
                     <input type="radio" id="spoti" name="choice">
                     <label for="spoti" onclick="window.location.href='https://spotify.com'">
-                        <img src="./assets/Vector%20(1).png" alt="">
+                        <img class="img" src="./assets/Vector%20(1).png" alt="">
                     </label>
                     <input type="radio" id="pint" name="choice">
                     <label for="pint" onclick="window.location.href='https://pocketcasts.com'">
-                        <img src="./assets/Vector%20(2).png" alt="">
+                        <img class="img" src="./assets/Vector%20(2).png" alt="">
                     </label>
                     <input type="radio" id="weath" name="choice">
                     <label for="weath" onclick="window.location.href='https://www.cloudflare.com/ru-ru'">
-                        <img src="./assets/IMAGE.png" alt="">
+                        <img class="img" src="./assets/IMAGE.png" alt="">
                     </label>
                     <input type="radio" id="apple" name="choice">
                     <label for="apple" onclick="window.location.href='https://www.apple.com/apple-podcasts'">
-                        <img src="./assets/IMAGE%20(2).png" alt="">
+                        <img class="img" src="./assets/IMAGE%20(2).png" alt="">
                     </label>
                     <input type="radio" id="over" name="choice">
                     <label for="over" onclick="window.location.href='https://overcast.fm'">
-                        <img src="./assets/IMAGE%20(1).png" alt="">
+                        <img class="img" src="./assets/IMAGE%20(1).png" alt="">
                     </label>
                 </form>
             </div>

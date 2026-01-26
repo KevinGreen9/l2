@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul {
@@ -17,6 +18,7 @@ html, body {
     min-height: 1073px;
     background: #191919;
     font-family: "DM Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -51,11 +53,16 @@ html, body {
     line-height: 1.58824;
     color: #fff;
     padding: 20px 0;
+    transition: 0.3s;
+}
 
+.menu-link:hover {
+    color: #118da8;
+    cursor: pointer;
 
 }
 
-.main {
+#home {
     min-width: 1300px;
     min-height: 870px;
     padding: 40px 70px;
@@ -66,14 +73,28 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+ ;
 }
 
-.main-img {
+.main-img-wrap {
     border-radius: 12px;
     min-width: 650px;
     height: 873px;
     display: flex;
     justify-content: flex-start;
+    position: relative
+
+}
+.main-img-wrap:after{
+    content: "";
+    display: inline-block;
+    background-image: url("./assets/luch.png");
+    background-size: contain;
+    position: absolute;
+    width: 68px;
+    height: 74px;
+    top: -26px;
+    left: -26px;
 }
 
 .main-info {
@@ -100,6 +121,19 @@ html, body {
     line-height: 1.17333;
     letter-spacing: 0.04em;
     padding-right: 25px;
+    position: relative;
+
+}
+.next:after {
+    content: "";
+    display: inline-block;
+    background-image: url("./assets/line.png");
+    background-size: cover;
+    position: absolute;
+    width: 163px;
+    height: 11px;
+    bottom: -4px;
+    left: -3px;
 
 }
 
@@ -133,9 +167,14 @@ form {
 input {
     appearance: none;
 }
+.img:hover{
+    transition: 0.4s;
+    transform:translateY(-5px);
+    cursor: pointer;
+}
 
 
-.continue {
+#episodes {
     min-width: 1440px;
     height: 2088px;
     padding: 0 70px;
@@ -268,6 +307,12 @@ input {
     background: #118da8;
 
 }
+button:hover{
+    background-color: #3498db;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 .too-card {
     border-radius: 32px;
@@ -319,15 +364,37 @@ input {
     flex-direction: column;
 }
 
-.svg {
-    /*transform: rotate(90deg);*/
-    /*padding-bottom: 20px;*/
-}
 
 .host {
     font-size: 17px;
     line-height: 1.58824;
     width: fit-content;
+}
+
+.arrow{
+    transition: 0.4s;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+}
+.fon{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.str{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    transition: transform 0.4s ease;
+}
+.arrow:hover{
+    transform: rotate(90deg);
+    cursor: pointer;
 }
 
 .jacob {
@@ -342,7 +409,7 @@ input {
     height: 743px;
 }
 
-.subscription {
+#subscription {
     display: flex;
     flex-direction: column;
 }
@@ -357,7 +424,19 @@ input {
     gap: 76px;
     align-items: center;
     margin: 100px 0;
+    position: relative;
 
+}
+.updates:after{
+    content: "";
+    display: inline-block;
+    background-image: url("./assets/big_luch.png");
+    background-size: contain;
+    position: absolute;
+    width: 147px;
+    height: 91px;
+    bottom: -26px;
+    left: -38px;
 }
 
 .left {
@@ -391,6 +470,11 @@ input {
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.7);
     padding-left: 20px;
+    transition: 0.5s;
+}
+#name:hover, #mail:hover{
+    border: 1px solid #195899;
+    cursor: pointer;
 }
 
 .small {
@@ -473,6 +557,7 @@ input {
     flex-direction: row;
     gap: 16px;
     margin: 0 auto;
+    transition: 0.3s;
 }
 .social{
     width: 447px;
