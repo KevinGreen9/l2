@@ -32,6 +32,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -172,18 +173,22 @@ html, body {
     font-size: 15px;
     line-height: 1.6;
     color: #fff;
+    padding-left: 22px;
 }
 
 form {
     display: flex;
     gap: 17px;
     justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
-    margin-left: 0;
+    min-height: 32px;
+    height: auto;
 }
 form label {
     display: flex;
     align-items: center;
+
 }
 
 input {
@@ -500,7 +505,8 @@ button:hover {
 
 .reviews {
     max-width: 1300px;
-    height: auto; display: grid;
+    height: auto;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 16px;
@@ -509,6 +515,7 @@ button:hover {
 }
 
 .review {
+    height: auto;
     width: 100%;
     border-radius: 32px;
     max-width: 423px;
@@ -618,6 +625,7 @@ button:hover {
 .header-wrapper{
     padding:  26px 0 ;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
     .logo-img{
@@ -635,7 +643,6 @@ button:hover {
         border: none;
         cursor: pointer;
         background-repeat: no-repeat;
-        padding: 21px 27px 21px;
         background-color: transparent;
     }
 
@@ -683,7 +690,8 @@ button:hover {
     }
     .mini-img,
     .mini-img-2{
-        min-width: 648px;
+        max-width: 648px;
+        width: 100%;
         min-height: 465px;
         object-fit: cover;
     }
@@ -788,8 +796,8 @@ button:hover {
 .bottom-menu,
 .licence,
 .labels{
-    flex: 1;
-    min-width: 0;
+    flex: 1 1 100%;
+    max-width: 100%;
     height: auto;
 }
 .licence{
@@ -799,3 +807,164 @@ button:hover {
 
 
 }
+
+@media screen and (max-width: 576px ) {
+
+.burger{
+    width: 44px;
+    height: 44px;
+}
+    #home{
+        padding: 40px 20px 60px;
+    };
+    .main-wrapper{
+        gap: 40px;
+    }
+
+.main-img-wrap{
+    width: 100%;
+    height: auto;
+}
+    .main-img-wrap img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .text{
+        font-size: 40px;
+        letter-spacing: 0.06em;
+    }
+    .next,
+    .level{
+        font-size: 50px;
+    }
+
+    .next:after{
+        width: 114px;
+        height: 7px;
+    }
+    .main-info{
+        padding:  0 20px;
+        gap:75px;
+    }
+#episodes{
+    padding: 0 20px 60px;
+}
+.second-main{
+    gap: 40px;
+}
+.one-main{
+    padding: 60px 20px 40px;
+}
+.heading{
+    font-size: 38px;
+    line-height: 129%;
+    letter-spacing: 0.08em;
+}
+.one-card,
+.too-card,
+.three-card{
+    width: 100%;
+    min-height: 591px;
+    height: auto;
+    gap:30px;
+    padding: 20px ;
+}
+.mini-img,
+.mini-img-2{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.episode{
+    padding-top: 27px ;
+}
+.description{
+    font-size: 40px;
+    letter-spacing: 0.06em;
+    padding-bottom: 40px;
+}
+.info{
+    padding-bottom: 30px;
+}
+#about{
+    padding: 60px 40px ;
+}
+.three-main{
+    gap: 40px;
+    margin: 0;
+}
+.boss{
+    width: 100%;
+    height: 467px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.host-info{
+    gap: 20px;
+}
+.arrow, .host,
+.jacob, .info{
+    padding: 0;
+}
+#subscription{
+    padding: 60px 20px;
+}
+.updates{
+    width: 100%;
+    height: auto;
+    gap: 60px;
+}
+.left{
+    margin: 0 20px;
+    padding: 60px 0 0;
+}
+.right{
+    padding: 0 20px 60px;
+}
+#name,
+#mail{
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+    min-height: 82px;
+    height: auto;
+}
+
+.reviews{
+    padding: 60px 20px 60px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.stars,
+.comment,
+.name{
+    padding-left: 20px;
+}
+
+.footer{
+    padding: 60px 40px;
+}
+.social{
+    width: 100%;
+    min-height: 170px;
+    height: auto;
+}
+.footer-bottom{
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+
+
+
+}
+
+
+
