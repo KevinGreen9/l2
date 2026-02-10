@@ -14,8 +14,8 @@ ul {
 }
 
 html, body {
-    min-width: 1440px;
-    min-height: 1073px;
+    max-width: 100%;
+    min-height: 100vh;
     background: #191919;
     font-family: "DM Sans", sans-serif;
     scroll-behavior: smooth;
@@ -46,6 +46,9 @@ html, body {
 
 
 }
+.burger{
+    display: none;
+}
 
 .menu-link {
     font-weight: 400;
@@ -63,29 +66,38 @@ html, body {
 }
 
 #home {
-    min-width: 1300px;
-    min-height: 870px;
+    /*min-width: 1300px;*/
+    /*min-height: 870px;*/
     padding: 40px 70px;
 
 }
 
 .main-wrapper {
     display: flex;
+    gap: 60px;
     flex-direction: row;
     justify-content: center;
- ;
+
 }
 
 .main-img-wrap {
-    border-radius: 12px;
-    min-width: 650px;
-    height: 873px;
+    max-width: 650px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     position: relative
 
 }
-.main-img-wrap:after{
+
+.main-img-wrap img {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-img-wrap:after {
     content: "";
     display: inline-block;
     background-image: url("./assets/luch.png");
@@ -98,21 +110,23 @@ html, body {
 }
 
 .main-info {
-    padding: 314px 64px 130px 60px;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 90px;
 }
 
 .text {
-    width: 526px;
-    height: 176px;
+    max-width: 526px;
+    min-height: 176px;
     font-weight: 400;
     font-size: 70px;
     line-height: 1.25714;
     letter-spacing: 0.05em;
     color: #fff;
-    padding-bottom: 90px;
+
+    /*padding-bottom: 90px;*/
 }
 
 .next {
@@ -124,6 +138,7 @@ html, body {
     position: relative;
 
 }
+
 .next:after {
     content: "";
     display: inline-block;
@@ -146,9 +161,10 @@ html, body {
 
 
 .choice {
-    padding: 90px 0 173px;
-
-
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
 }
 
 .listen {
@@ -161,23 +177,31 @@ html, body {
 form {
     display: flex;
     gap: 17px;
-    padding-top: 16px;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 0;
+}
+form label {
+    display: flex;
+    align-items: center;
 }
 
 input {
     appearance: none;
 }
-.img:hover{
+
+.img:hover {
     transition: 0.4s;
-    transform:translateY(-5px);
+    transform: translateY(-5px);
     cursor: pointer;
 }
 
 
 #episodes {
-    min-width: 1440px;
-    height: 2088px;
-    padding: 0 70px;
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    /*padding: 0 70px;*/
 }
 
 .container {
@@ -221,34 +245,38 @@ input {
 }
 
 .second-main {
-    min-width: 1300px;
-    height: 1689px;
+    max-width: 1300px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 60px;
 
 }
 
-.one-card {
+.one-card,
+.too-card,
+.three-card {
     border-radius: 32px;
-    width: 1300px;
-    height: 545px;
+    max-width: 1300px;
+    /*min-height: auto;*/
     background: #000;
     display: flex;
     flex-direction: row;
     gap: 53px;
     justify-content: center;
     padding: 40px;
+
 }
 
-.mini-img {
-    min-width: 389px;
-    min-height: 465px;
+.mini-img,
+.mini-img-2 {
+    max-width: 100%;
+    height: auto;
 }
 
 .one-card-info {
-    width: 778px;
-    height: 465px;
+    max-width: 778px;
+    min-height: 465px;
     display: flex;
     flex-direction: column;
     margin-top: 7px;
@@ -256,7 +284,7 @@ input {
 
 .gear {
     border-radius: 6px;
-    width: fit-content;
+    max-width: fit-content;
     height: 27px;
     background: #191919;
     font-weight: 400;
@@ -307,40 +335,14 @@ input {
     background: #118da8;
 
 }
-button:hover{
+
+button:hover {
     background-color: #3498db;
     color: white;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.too-card {
-    border-radius: 32px;
-    width: 1300px;
-    height: 512px;
-    background: #000;
-    display: flex;
-    flex-direction: row;
-    gap: 53px;
-    padding: 40px;
-}
-
-.mini-img-2 {
-    min-width: 389px;
-    min-height: 432px;
-
-}
-
-.three-card {
-    border-radius: 32px;
-    width: 1300px;
-    height: 512px;
-    background: #000;
-    display: flex;
-    flex-direction: row;
-    gap: 53px;
-    padding: 40px;
-}
 
 .solo {
     font-size: 57px;
@@ -349,7 +351,7 @@ button:hover{
 
 .three-main {
     max-width: 1300px;
-    height: 743px;
+    min-height: 743px;
     display: flex;
     flex-direction: row;
     gap: 60px;
@@ -358,10 +360,10 @@ button:hover{
 
 .host-info {
     max-width: 590px;
-    height: 448px;
-    padding: 147px 0;
+    min-height: 448px;
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 
@@ -371,20 +373,22 @@ button:hover{
     width: fit-content;
 }
 
-.arrow{
+.arrow {
     transition: 0.4s;
     position: relative;
     display: inline-block;
-    width: 100px;
+    max-width: 100px;
     height: 100px;
     text-decoration: none;
 }
-.fon{
+
+.fon {
     width: 100%;
     height: 100%;
     display: block;
 }
-.str{
+
+.str {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -392,7 +396,8 @@ button:hover{
     transform: translate(-50%, -50%);
     transition: transform 0.4s ease;
 }
-.arrow:hover{
+
+.arrow:hover {
     transform: rotate(90deg);
     cursor: pointer;
 }
@@ -405,19 +410,16 @@ button:hover{
 
 .boss {
     border-radius: 12px;
-    width: 650px;
-    height: 743px;
+    max-width: 650px;
+    min-height: 743px;
 }
 
-#subscription {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .updates {
     border-radius: 32px;
-    width: 1300px;
-    height: 387px;
+    max-width: 1300px;
+    height: auto;
     background: #000;
     display: flex;
     flex-direction: row;
@@ -427,7 +429,10 @@ button:hover{
     position: relative;
 
 }
-.updates:after{
+.new{
+  padding: 0 ;
+}
+.updates:after {
     content: "";
     display: inline-block;
     background-image: url("./assets/big_luch.png");
@@ -441,16 +446,20 @@ button:hover{
 
 .left {
     max-width: 642px;
-    padding-left: 60px;
+  margin-left: 60px ;
+
+
 }
 
 .sub {
     font-size: 72px;
     line-height: 1.1;
+
 }
 
 .right {
     padding: 60px 60px 75px 0;
+
 
 }
 
@@ -462,7 +471,8 @@ button:hover{
 #name, #mail {
     border: 1px solid #191919;
     border-radius: 6px;
-    width: 522px;
+    min-width: 522px;
+    width: 100%;
     height: 82px;
     background: #191919;
     font-weight: 400;
@@ -472,7 +482,8 @@ button:hover{
     padding-left: 20px;
     transition: 0.5s;
 }
-#name:hover, #mail:hover{
+
+#name:hover, #mail:hover {
     border: 1px solid #195899;
     cursor: pointer;
 }
@@ -488,21 +499,23 @@ button:hover{
 }
 
 .reviews {
-    width: 1300px;
-    max-height: 701px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+    max-width: 1300px;
+    height: auto; display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 16px;
-    margin: 100px 0;
+    justify-items: center;
+    margin: 100px auto;
 }
 
 .review {
+    width: 100%;
     border-radius: 32px;
-    width: 423px;
-    height: 321px;
+    max-width: 423px;
+    min-height: 321px;
     background: #000;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -549,43 +562,240 @@ button:hover{
     justify-content: flex-start;
 }
 
-.footer{
-    min-width: 1440px;
-    height: 438px;
+.footer {
+    width: 100%;
+    max-width: 1440px;
     padding: 100px 70px 116px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 16px;
     margin: 0 auto;
     transition: 0.3s;
 }
-.social{
-    width: 447px;
-    max-height: 222px;
+
+.social {
+    min-width: 447px;
+    min-height:  222px;
+   height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.messenger{
+
+.footer-bottom{
+    display: contents;
+}
+.messenger {
     padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
-.bottom-menu{
-    width: 178px;
-    height: 222px;
+.bottom-menu,
+.licence
+{
+    max-width: 178px;
+    height: auto;
 }
 
-.menu-footer{
+.menu-footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+
+.menu-licence {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px ) {
+.header-wrapper{
+    padding:  26px 0 ;
+    display: flex;
+    justify-content: space-between;
+}
+    .logo-img{
+        padding: 17px 0 17px 20px;
+    }
+    .menu {
+        display: none;
+    }
+    .burger{
+        display: block;
+        background-image: url("./assets/iconamoon_menu-burger-horizontal-light (3).png");
+        width: 36px;
+        height: 24px;
+        background-size: contain;
+        border: none;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        padding: 21px 27px 21px;
+        background-color: transparent;
+    }
+
+    .burger:focus,
+    .burger:active {
+        outline: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+.main-info{
+    padding: 0;
+}
+
+    .main-wrapper {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .main-img-wrap img{
+        object-fit: cover;
+    }
+
+
+    #episodes{
+        padding: 0 20px 160px;
+    }
+
+    .container{
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .one-main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .one-card,
+    .too-card,
+    .three-card{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .mini-img,
+    .mini-img-2{
+        min-width: 648px;
+        min-height: 465px;
+        object-fit: cover;
+    }
+    #about{
+        padding: 100px 60px 115px;
+    }
+.three-main {
+    flex-direction: column-reverse;
+    gap: 60px;
+}
+.boss{
+    width: 100%; /* картинка занимает всю ширину блока */
+    height: auto;
+    min-height: auto;
+}
+#subscription {
+    padding: 100px 20px;
+}
+.updates{
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    height: auto;
+    position: relative;
+}
+.updates:after {
+     left: 92%;
+    bottom: -6%;
+    transform:translateX(-50%) rotate(320deg);
+
+}
+
+.left{
+    padding: 60px 0 86px ;
+    margin-left: 40px;
+}
+
+.right{
+    padding: 0 40px 86px ;
+    width: 100%;
+    min-height: 252px;
+
+}
+
+#name, #mail{
+    max-width: 648px;
+    width: 100%;
+}
+.sub{
+    padding: 0;
+}
+
+.reviews{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 16px;
+    justify-items: center;
+    padding: 0 20px ;
+}
+.review{
+    height: auto;
+    max-width: 356px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.c1,
+.c2,
+.c3{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.c4{
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.stars{
+    padding-left:  40px;
+}
+.name{
+    padding-left:  40px;
+}
+
+.footer{
+    padding: 100px 60px 123px;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-bottom{
+    max-width: 646px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.bottom-menu,
+.licence,
+.labels{
+    flex: 1;
+    min-width: 0;
+    height: auto;
 }
 .licence{
-    width: 178px;
-    height: 222px;
+    max-width: 193px;
+    min-height: 222px;
 }
-.menu-licence{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+
 }
